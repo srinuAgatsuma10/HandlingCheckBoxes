@@ -5,9 +5,9 @@
     <classes>
       <class name="DemoQA.HandlingCheckBoxes">
         <methods>
+          <include name="clickRandomBox"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="clickAllCheckBoxes"/>
         </methods>
       </class> <!-- DemoQA.HandlingCheckBoxes -->
     </classes>
