@@ -1,6 +1,7 @@
 package automationBlogSpot;
 
 import java.time.Duration;
+import java.util.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -47,7 +48,11 @@ public class HandlingCheckBoxes {
 	
 	@Test(priority = 2)
 	public void selectAllBoxes() {
-		
+		List<WebElement> checkBoxes = driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
+		for(WebElement cb : checkBoxes) {
+			cb.click();
+			System.out.println("You Clicked : "+cb.getAttribute("id"));
+		}
 	}
 	
 	@Test(priority = 3)
