@@ -57,7 +57,11 @@ public class HandlingCheckBoxes {
 	
 	@Test(priority = 3)
 	public void lastThreeBoxes() {
-		
+		List<WebElement> checkBoxes = driver.findElements(By.xpath("//input[@class='form-check-input' and @type='checkbox']"));
+		for(int i = 4;i<checkBoxes.size();i++) {
+			checkBoxes.get(i).click();
+			System.out.println("You Clicked : "+checkBoxes.get(i).getAttribute("id"));
+		}
 	}
 	
 	@Test(priority = 4)
