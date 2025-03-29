@@ -3,7 +3,9 @@ package automationBlogSpot;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,19 +20,29 @@ import org.testng.annotations.Test;
 
 public class HandlingCheckBoxes {
 	WebDriver driver;
+	JavascriptExecutor jse;
 
 	@BeforeClass
 	public void setUp() {
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://demoqa.com/checkbox");
+		driver.get("https://testautomationpractice.blogspot.com/");
 		driver.manage().window().maximize();
+		// Initiate JavaScrip Executer
+		jse = (JavascriptExecutor) driver;
 	}
 	
 	@Test(priority = 1)
 	public void customCheckBox() {
+		// Approach 1
+		WebElement box = driver.findElement(By.xpath("//div[@class='blog-posts hfeed']//div[4]//div[1]"));
+		box.click();
+		System.out.println("You clicked : "+box.getText());
 		
+		// Approach 2 (Using Java Script Executer)
+//		jse.executeScript("arguments[0].click()", box);
+//		System.out.println("You clicked : "+box.getText());
 	}
 	
 	@Test(priority = 2)

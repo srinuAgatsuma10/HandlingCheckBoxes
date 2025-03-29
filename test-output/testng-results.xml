@@ -1,41 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-02T15:59:48 IST" name="Default suite" finished-at="2025-03-02T16:00:57 IST" duration-ms="69395">
+  <suite started-at="2025-03-29T08:52:29 IST" name="Default suite" finished-at="2025-03-29T08:52:52 IST" duration-ms="22672">
     <groups>
     </groups>
-    <test started-at="2025-03-02T15:59:48 IST" name="Default test" finished-at="2025-03-02T16:00:57 IST" duration-ms="69395">
-      <class name="DemoQA.HandlingCheckBoxes">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T15:59:48 IST" name="setUp" finished-at="2025-03-02T16:00:51 IST" duration-ms="63399" status="PASS">
+    <test started-at="2025-03-29T08:52:29 IST" name="Default test" finished-at="2025-03-29T08:52:52 IST" duration-ms="22672">
+      <class name="automationBlogSpot.HandlingCheckBoxes">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:automationBlogSpot.HandlingCheckBoxes@7c7a06ec]" started-at="2025-03-29T08:52:29 IST" name="setUp" finished-at="2025-03-29T08:52:52 IST" duration-ms="22410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickRootCheckBoxes()[pri:1, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:51 IST" name="clickRootCheckBoxes" finished-at="2025-03-02T16:00:52 IST" duration-ms="450" status="PASS">
+        <test-method signature="customCheckBox()[pri:1, instance:automationBlogSpot.HandlingCheckBoxes@7c7a06ec]" started-at="2025-03-29T08:52:52 IST" name="customCheckBox" finished-at="2025-03-29T08:52:52 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickRootCheckBoxes -->
-        <test-method signature="clickAllCheckBoxes()[pri:2, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:52 IST" name="clickAllCheckBoxes" finished-at="2025-03-02T16:00:52 IST" duration-ms="537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAllCheckBoxes -->
-        <test-method signature="clickSetBySetBoxes()[pri:3, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:52 IST" name="clickSetBySetBoxes" finished-at="2025-03-02T16:00:56 IST" duration-ms="3622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickSetBySetBoxes -->
-        <test-method signature="clickBoxWithName()[pri:4, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:56 IST" name="clickBoxWithName" finished-at="2025-03-02T16:00:56 IST" duration-ms="480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickBoxWithName -->
-        <test-method signature="clickRandomBox()[pri:5, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:56 IST" name="clickRandomBox" finished-at="2025-03-02T16:00:57 IST" duration-ms="316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickRandomBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:DemoQA.HandlingCheckBoxes@5b7a5baa]" started-at="2025-03-02T16:00:57 IST" name="tearDown" finished-at="2025-03-02T16:00:57 IST" duration-ms="505" status="PASS">
+        </test-method> <!-- customCheckBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automationBlogSpot.HandlingCheckBoxes@7c7a06ec]" started-at="2025-03-29T08:52:52 IST" name="tearDown" finished-at="2025-03-29T08:52:52 IST" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- DemoQA.HandlingCheckBoxes -->
+      </class> <!-- automationBlogSpot.HandlingCheckBoxes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
