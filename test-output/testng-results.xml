@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T21:31:19 IST" name="Default suite" finished-at="2025-04-04T21:31:33 IST" duration-ms="13584">
+  <suite started-at="2025-04-04T21:58:46 IST" name="Default suite" finished-at="2025-04-04T21:59:10 IST" duration-ms="24530">
     <groups>
     </groups>
-    <test started-at="2025-04-04T21:31:19 IST" name="Default test" finished-at="2025-04-04T21:31:33 IST" duration-ms="13584">
-      <class name="theInternetHerokuApp.HandlingCheckBoxes">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:theInternetHerokuApp.HandlingCheckBoxes@62379589]" started-at="2025-04-04T21:31:19 IST" name="setUp" finished-at="2025-04-04T21:31:32 IST" duration-ms="12850" status="PASS">
+    <test started-at="2025-04-04T21:58:46 IST" name="Default test" finished-at="2025-04-04T21:59:10 IST" duration-ms="24530">
+      <class name="qa_Practice.HandlingSingleCheckBox">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa_Practice.HandlingSingleCheckBox@5bf0d49]" started-at="2025-04-04T21:58:46 IST" name="setUp" finished-at="2025-04-04T21:59:09 IST" duration-ms="23803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCaseOne()[pri:1, instance:theInternetHerokuApp.HandlingCheckBoxes@62379589]" started-at="2025-04-04T21:31:32 IST" name="testCaseOne" finished-at="2025-04-04T21:31:32 IST" duration-ms="222" status="PASS">
+        <test-method signature="singleCheckBox()[pri:0, instance:qa_Practice.HandlingSingleCheckBox@5bf0d49]" started-at="2025-04-04T21:59:10 IST" name="singleCheckBox" finished-at="2025-04-04T21:59:10 IST" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseOne -->
-        <test-method signature="testCaseTwo()[pri:2, instance:theInternetHerokuApp.HandlingCheckBoxes@62379589]" started-at="2025-04-04T21:31:32 IST" name="testCaseTwo" finished-at="2025-04-04T21:31:32 IST" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseTwo -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:theInternetHerokuApp.HandlingCheckBoxes@62379589]" started-at="2025-04-04T21:31:32 IST" name="tearDown" finished-at="2025-04-04T21:31:33 IST" duration-ms="375" status="PASS">
+        </test-method> <!-- singleCheckBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa_Practice.HandlingSingleCheckBox@5bf0d49]" started-at="2025-04-04T21:59:10 IST" name="tearDown" finished-at="2025-04-04T21:59:10 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- theInternetHerokuApp.HandlingCheckBoxes -->
+      </class> <!-- qa_Practice.HandlingSingleCheckBox -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
