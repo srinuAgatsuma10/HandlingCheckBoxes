@@ -28,21 +28,28 @@ public class HandlingCheckBoxes {
 		driver.manage().window().maximize();
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void testCaseOne() {
 		List<WebElement> boxes = driver.findElements(By.xpath("//form[@id='checkboxes']//input"));
-		for(WebElement box : boxes) {
-			if(box.isSelected()) {
-				System.out.println("The box is alredy selected");
-			}
-			else {
+		for (WebElement box : boxes) {
+			if (box.isSelected()) {
+				break;
+			} else {
 				box.click();
 			}
-		}			
+		}
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void testCaseTwo() {
+		List<WebElement> boxes = driver.findElements(By.xpath("//form[@id='checkboxes']//input"));
+		for (WebElement box : boxes) {
+			if (box.isSelected()) {
+				System.out.println("The box is alredy selected");
+			} else {
+				box.click();
+			}
+		}
 
 	}
 
