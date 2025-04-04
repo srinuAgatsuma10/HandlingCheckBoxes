@@ -1,8 +1,11 @@
 package theInternetHerokuApp;
 
 import java.time.Duration;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -27,7 +30,15 @@ public class HandlingCheckBoxes {
 
 	@Test
 	public void testCaseOne() {
-
+		List<WebElement> boxes = driver.findElements(By.xpath("//form[@id='checkboxes']//input"));
+		for(WebElement box : boxes) {
+			if(box.isSelected()) {
+				System.out.println("The box is alredy selected");
+			}
+			else {
+				box.click();
+			}
+		}			
 	}
 
 	@Test
