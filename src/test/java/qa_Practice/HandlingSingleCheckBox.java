@@ -25,24 +25,26 @@ public class HandlingSingleCheckBox {
 		// Initiate Java Script Executor
 		jse = (JavascriptExecutor) driver;
 	}
-	
+
 	@Test
 	public void singleCheckBox() {
 		// Approach One
 		WebElement checkBox = driver.findElement(By.xpath("//input[@class='form-check-input']"));
-		if(checkBox.isSelected()) {
-			System.out.println(checkBox.getAttribute("value")+" Box is already Selected");
-		}
-		else {
+		if (checkBox.isSelected()) {
+			System.out.println(checkBox.getAttribute("value") + " Box is already Selected");
+			driver.findElement(By.xpath("//input[@id='submit-id-submit']")).click();
+		} else {
 			checkBox.click();
-			System.out.println(checkBox.getAttribute("value")+" Box is Selected now.");
+			driver.findElement(By.xpath("//input[@id='submit-id-submit']")).click();
+			System.out.println(driver.findElement(By.xpath("//div[@id='result']")).getText());
 		}
-		
+
 		// Approach Two
 //		jse.executeScript("arguments[0].click()", checkBox);
-//		System.out.println(checkBox.getAttribute("value")+" Box is Selected now.");
+//		driver.findElement(By.xpath("//input[@id='submit-id-submit']")).click();
+//		System.out.println(driver.findElement(By.xpath("//div[@id='result']")).getText());
 	}
-	
+
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
