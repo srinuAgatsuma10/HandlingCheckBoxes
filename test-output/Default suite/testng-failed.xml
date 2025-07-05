@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationBlogSpot.HandlingCheckBoxes">
+      <class name="tutorialsPoint.Handling_CheckBoxes">
         <methods>
-          <include name="lastThreeBoxes"/>
-          <include name="tearDown"/>
+          <include name="clickRootCheckboxes1"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- automationBlogSpot.HandlingCheckBoxes -->
+      </class> <!-- tutorialsPoint.Handling_CheckBoxes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
