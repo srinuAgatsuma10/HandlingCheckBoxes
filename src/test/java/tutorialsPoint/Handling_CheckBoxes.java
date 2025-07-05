@@ -1,6 +1,7 @@
 package tutorialsPoint;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,20 +27,30 @@ public class Handling_CheckBoxes {
 
 	// Main level 1
 
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void clickRootCheckboxes1() {
 		driver.findElement(By.xpath("//input[@id='c_bs_1']")).click();
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
 		WebElement subLevel1 = driver.findElement(By.xpath("//input[@id='c_bf_1']"));
 		WebElement subLevel2 = driver.findElement(By.xpath("//input[@id='c_bf_2']"));
-		if(subLevel1.isSelected() && subLevel2.isSelected()) {
+		if (subLevel1.isSelected() && subLevel2.isSelected()) {
 			Assert.assertTrue(true);
 		}
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void clickLastLevelBoxes1() {
-
+		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
+		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
+		List<WebElement> lastLevelBoxes1 = driver.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for(WebElement lb : lastLevelBoxes1) {
+			lb.click();
+		}
+		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
+		List<WebElement> lastLevelBoxes2 = driver.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for(WebElement lb : lastLevelBoxes2) {
+			lb.click();
+		}
 	}
 
 	// Main level 2

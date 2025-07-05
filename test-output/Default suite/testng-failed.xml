@@ -5,9 +5,9 @@
     <classes>
       <class name="tutorialsPoint.Handling_CheckBoxes">
         <methods>
-          <include name="clickRootCheckboxes1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="clickLastLevelBoxes1"/>
         </methods>
       </class> <!-- tutorialsPoint.Handling_CheckBoxes -->
     </classes>

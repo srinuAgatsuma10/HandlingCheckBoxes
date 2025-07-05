@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-05T20:18:54 IST" name="Default suite" finished-at="2025-07-05T20:19:00 IST" duration-ms="5792">
+  <suite started-at="2025-07-05T20:30:23 IST" name="Default suite" finished-at="2025-07-05T20:30:42 IST" duration-ms="19260">
     <groups>
     </groups>
-    <test started-at="2025-07-05T20:18:54 IST" name="Default test" finished-at="2025-07-05T20:19:00 IST" duration-ms="5792">
+    <test started-at="2025-07-05T20:30:23 IST" name="Default test" finished-at="2025-07-05T20:30:42 IST" duration-ms="19260">
       <class name="tutorialsPoint.Handling_CheckBoxes">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:18:55 IST" name="setUp" finished-at="2025-07-05T20:18:59 IST" duration-ms="4816" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:30:23 IST" name="setUp" finished-at="2025-07-05T20:30:28 IST" duration-ms="5117" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickRootCheckboxes1()[pri:1, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:18:59 IST" name="clickRootCheckboxes1" finished-at="2025-07-05T20:19:00 IST" duration-ms="481" status="PASS">
+        <test-method signature="clickLastLevelBoxes1()[pri:2, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:30:28 IST" name="clickLastLevelBoxes1" finished-at="2025-07-05T20:30:42 IST" duration-ms="13574" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (581, 684)
+  (Session info: chrome=137.0.7151.120)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe14bccb5da4b710fc4ebf609e60c557, clickElement {id=f.B46BBBBF1F93879816D63A8FBE73618F.d.39779DEC7A8797367D8581C80B64B3F3.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55682/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe14bccb5da4b710fc4ebf609e60c557)] -> xpath: //ul[@class='inner_ul']//li//input[@type='checkbox']]
+Session ID: fe14bccb5da4b710fc4ebf609e60c557]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (581, 684)
+  (Session info: chrome=137.0.7151.120)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe14bccb5da4b710fc4ebf609e60c557, clickElement {id=f.B46BBBBF1F93879816D63A8FBE73618F.d.39779DEC7A8797367D8581C80B64B3F3.e.29}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.120, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55682}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55682/devtoo..., se:cdpVersion: 137.0.7151.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (fe14bccb5da4b710fc4ebf609e60c557)] -> xpath: //ul[@class='inner_ul']//li//input[@type='checkbox']]
+Session ID: fe14bccb5da4b710fc4ebf609e60c557
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at tutorialsPoint.Handling_CheckBoxes.clickLastLevelBoxes1(Handling_CheckBoxes.java:47)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickRootCheckboxes1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:19:00 IST" name="tearDown" finished-at="2025-07-05T20:19:00 IST" duration-ms="419" status="PASS">
+        </test-method> <!-- clickLastLevelBoxes1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tutorialsPoint.Handling_CheckBoxes@175c2241]" started-at="2025-07-05T20:30:42 IST" name="tearDown" finished-at="2025-07-05T20:30:42 IST" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
