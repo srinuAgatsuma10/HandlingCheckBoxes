@@ -38,31 +38,59 @@ public class Handling_CheckBoxes {
 		}
 	}
 
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void clickLastLevelBoxes1() {
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
-		List<WebElement> lastLevelBoxes1 = driver.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
-		for(WebElement lb : lastLevelBoxes1) {
+		List<WebElement> lastLevelBoxes1 = driver
+				.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for (WebElement lb : lastLevelBoxes1) {
 			lb.click();
 		}
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
-		List<WebElement> lastLevelBoxes2 = driver.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
-		for(WebElement lb : lastLevelBoxes2) {
+		List<WebElement> lastLevelBoxes2 = driver
+				.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for (WebElement lb : lastLevelBoxes2) {
 			lb.click();
+		}
+		WebElement rootBox = driver.findElement(By.xpath("//input[@id='c_bs_2']"));
+		if (rootBox.isSelected()) {
+			Assert.assertTrue(true);
 		}
 	}
 
 	// Main level 2
 
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void clickRootCheckboxes2() {
-
+		driver.findElement(By.xpath("//input[@id='c_bs_2']")).click();
+		driver.findElement(By.xpath("//li[@id='bs_2']//span[@class='plus']")).click();
+		WebElement subLevel1 = driver.findElement(By.xpath("//input[@id='c_bf_1']"));
+		WebElement subLevel2 = driver.findElement(By.xpath("//input[@id='c_bf_2']"));
+		if (subLevel1.isSelected() && subLevel2.isSelected()) {
+			Assert.assertTrue(true);
+		}
 	}
 
-//	@Test(priority = 4)
+	@Test(priority = 4)
 	public void clickLastLevelBoxes2() {
-
+		driver.findElement(By.xpath("//li[@id='bs_2']//span[@class='plus']")).click();
+		driver.findElement(By.xpath("//li[@id='bs_2']//span[@class='plus']")).click();
+		List<WebElement> lastLevelBoxes1 = driver
+				.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for (WebElement lb : lastLevelBoxes1) {
+			lb.click();
+		}
+		driver.findElement(By.xpath("//li[@id='bs_2']//span[@class='plus']")).click();
+		List<WebElement> lastLevelBoxes2 = driver
+				.findElements(By.xpath("//ul[@class='inner_ul']//li//input[@type='checkbox']"));
+		for (WebElement lb : lastLevelBoxes2) {
+			lb.click();
+		}
+		WebElement rootBox = driver.findElement(By.xpath("//input[@id='c_bs_2']"));
+		if (rootBox.isSelected()) {
+			Assert.assertTrue(true);
+		}
 	}
 
 	@AfterClass
