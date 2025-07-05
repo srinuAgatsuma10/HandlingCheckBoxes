@@ -27,7 +27,7 @@ public class Handling_CheckBoxes {
 
 	// Main level 1
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void clickRootCheckboxes1() {
 		driver.findElement(By.xpath("//input[@id='c_bs_1']")).click();
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
@@ -38,7 +38,7 @@ public class Handling_CheckBoxes {
 		}
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void clickLastLevelBoxes1() {
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
 		driver.findElement(By.xpath("//li[@id='bs_1']//span[@class='plus']")).click();
